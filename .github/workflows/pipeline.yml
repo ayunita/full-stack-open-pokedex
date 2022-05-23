@@ -33,3 +33,5 @@ jobs:
           heroku_app_name: "cicd-exercise123"
           heroku_email: "andriani.yunita@aalto.fi"
           healthcheck: "https://cicd-exercise123.herokuapp.com/health"
+          checkstring: "ok"
+          rollbackonhealthcheckfailed: true
