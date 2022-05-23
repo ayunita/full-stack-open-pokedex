@@ -32,3 +32,4 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "cicd-exercise123"
           heroku_email: "andriani.yunita@aalto.fi"
+          healthcheck: "https://cicd-exercise123.herokuapp.com/health"
