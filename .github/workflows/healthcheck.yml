@@ -1,15 +1,15 @@
-name: Health check
+# name: Health check
 
-on:
-  schedule:
-    - cron: '30 5 * * 1'
+# on:
+#   schedule:
+#     - cron: '30 5 * * 1'
 
-jobs:
-  health:
-    runs-on: ubuntu-20.04
-    steps:
-      - uses: actions/checkout@v3
-      - name: Check the deployed service URL
-        uses: jtalk/url-health-check-action@v2
-        with:
-          url: "https://cicd-exercise123.herokuapp.com"
+# jobs:
+#   health:
+#     runs-on: ubuntu-20.04
+#     steps:
+#       - uses: actions/checkout@v3
+#       - name: Check the deployed service URL
+#         uses: jtalk/url-health-check-action@v2
+#         with:
+#           url: "https://cicd-exercise123.herokuapp.com"
