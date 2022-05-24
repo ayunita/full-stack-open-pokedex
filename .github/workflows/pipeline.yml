@@ -59,7 +59,14 @@ jobs:
         if: ${{ success() }}
         with:
           severity: info
-          color: '#F3A505'
+          color: '#00FFFF'
           text: A new version gets deployed
           webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
-
+      - name: Failure
+        uses: rjstone/discord-webhook-notify@v1.0.4
+        if: ${{ failure() }}
+        with:
+          severity: error
+          color: '#A020F0'
+          text: Build failed
+          webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
