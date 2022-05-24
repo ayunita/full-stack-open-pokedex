@@ -19,3 +19,5 @@ Start by running `npm install` inside the project folder
 :D
 
 =D
+
+:fish:
